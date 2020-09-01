@@ -94,6 +94,7 @@ constructor() {
     btnExpensesAdd.style.display = "block";
     btnIncomeAdd.style.display = "block";
     depositCheck.checked = false;
+    this.depositHandler();
   }
   showResult() {
     budgetMonthValue.value = this.budgetMonth;
@@ -266,5 +267,4 @@ constructor() {
 };
 
 const appData = new AppData();
-console.log(appData);
 appData.eventsListeners();
